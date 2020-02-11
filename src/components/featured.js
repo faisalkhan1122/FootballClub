@@ -16,12 +16,15 @@ const generateSlides = ({slides}) => {
             <Slider {...settings}>
                 {slides.map(function(item){
                     return (
-                        
-                                <div key={item.id} className="item_slider  boss" >   
+                        <div>
+                        <div key={item.id} className="item_slider" 
+                            style={{background:`url(/images/covers/${item.cover})`}}>
                             <div className="caption">
                                 <h4>{item.topic}</h4>
+                                
                                 <p>{item.title}</p>
                             </div>
+                        </div>
                         </div>
                         )  
                 })}

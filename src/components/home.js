@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 // COMPONENTS
 
-import Featured from './featured'
+import Featured from './featured';
+import Subscription from './subscription';
 
 const URL_HOME='http://localhost:3004/home';
 
@@ -14,6 +15,7 @@ const URL_HOME='http://localhost:3004/home';
 
         this.state={
             home:''
+            
         }
     }
 
@@ -34,6 +36,7 @@ const URL_HOME='http://localhost:3004/home';
         return (
             <div>
                 <Featured  slides={ this.state.home.slider } />
+                <Subscription/>
             </div>
         )
     }
