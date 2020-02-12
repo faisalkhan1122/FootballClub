@@ -24,6 +24,7 @@ const generateSlides = ({slides}) => {
                                 
                                 <p>{item.title}</p>
                             </div>
+                      
                         </div>
                         </div>
                         )  

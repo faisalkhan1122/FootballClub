@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 
 import Featured from './featured';
 import Subscription from './subscription';
+import Blocks from './blocks'
 
 const URL_HOME='http://localhost:3004/home';
 
@@ -37,6 +38,7 @@ const URL_HOME='http://localhost:3004/home';
             <div>
                 <Featured  slides={ this.state.home.slider } />
                 <Subscription/>
+                <Blocks  blocks={this.state.home.blocks} />
             </div>
         )
     }
